@@ -52,7 +52,11 @@ const extend = (array1, array2) => {
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
-function addKeyVal(obj, key, val) {}
+const addKeyVal = (obj, key, val) => {
+  let newObj = { ...obj };
+  newObj[key] = val;
+  return newObj;
+};
 
 /** Return a new object with a key removed. */
 

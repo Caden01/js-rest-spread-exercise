@@ -32,3 +32,9 @@ describe("#extend", () => {
     expect(extend([1, 2], [3, 4])).toEqual([1, 2, 3, 4]);
   });
 });
+
+describe("addKeyVal", () => {
+  it("should create a new object with the values of the obj and add a new key/value pair", () => {
+    expect(addKeyVal({ a: 1, b: 2 }, "c", 3)).toEqual({ a: 1, b: 2, c: 3 });
+  });
+});
