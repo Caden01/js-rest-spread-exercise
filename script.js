@@ -13,6 +13,10 @@ function filterOutOdds(...args) {
 // Write a function called findMin that accepts a variable number of arguments and returns the smallest argument.
 // Make sure to do this using the rest and spread operator.
 
+function findMin(...args) {
+  return Math.min(...args);
+}
+
 // mergeObjects
 // Write a function called mergeObjects that accepts two objects and returns a new object which contains all the keys and values of the first object and second object.
 
