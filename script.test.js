@@ -26,3 +26,9 @@ describe("#doubleAndReturnArgs", () => {
     expect(doubleAndReturnArgs([2, 4], 6, 8, 10)).toEqual([2, 4, 12, 16, 20]);
   });
 });
+
+describe("#extend", () => {
+  it("should create a new array with every value from both arrays", () => {
+    expect(extend([1, 2], [3, 4])).toEqual([1, 2, 3, 4]);
+  });
+});
