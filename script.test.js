@@ -44,3 +44,14 @@ describe("removeKey", () => {
     expect(addKeyVal({ a: 1, b: 2 }, "b")).toEqual({ a: 1, b: undefined });
   });
 });
+
+describe("combine", () => {
+  it("should create a new object with the values of obj1 and obj2", () => {
+    expect(combine({ a: 1, b: 2 }, { c: 3, d: 4 })).toEqual({
+      a: 1,
+      b: 2,
+      c: 3,
+      d: 4,
+    });
+  });
+});

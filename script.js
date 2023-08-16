@@ -68,7 +68,9 @@ const removeKey = (obj, key) => {
 
 /** Combine two objects and return a new object. */
 
-function combine(obj1, obj2) {}
+const combine = (obj1, obj2) => {
+  return { ...obj1, ...obj2 };
+};
 
 /** Return a new object with a modified key and value. */
 
