@@ -55,3 +55,9 @@ describe("combine", () => {
     });
   });
 });
+
+describe("update", () => {
+  it("should create a new object with the values of the obj and update a key/value pair", () => {
+    expect(update({ a: 1, b: 2 }, "b", 3)).toEqual({ a: 1, b: 3 });
+  });
+});
