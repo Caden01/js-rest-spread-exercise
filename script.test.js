@@ -20,3 +20,9 @@ describe("#mergeObjects", () => {
     });
   });
 });
+
+describe("#doubleAndReturnArgs", () => {
+  it("should create a new array with the values of the array and the values of the arguments doubled", () => {
+    expect(doubleAndReturnArgs([2, 4], 6, 8, 10)).toEqual([2, 4, 12, 16, 20]);
+  });
+});

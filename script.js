@@ -27,6 +27,10 @@ function mergeObjects(obj1, obj2) {
 // doubleAndReturnArgs
 // Write a function called doubleAndReturnArgs which accepts an array and a variable number of arguments. The function should return a new array with the original array values and all of additional arguments doubled.
 
+function doubleAndReturnArgs(arr, ...args) {
+  return [...arr, ...args.map((value) => value * 2)];
+}
+
 // Slice and Dice!
 // For this section, write the following functions using rest, spread and refactor these functions to be arrow functions!
 // Make sure that you are always returning a new array or object and not modifying the existing inputs.
