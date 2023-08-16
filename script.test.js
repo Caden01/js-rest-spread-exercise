@@ -38,3 +38,9 @@ describe("addKeyVal", () => {
     expect(addKeyVal({ a: 1, b: 2 }, "c", 3)).toEqual({ a: 1, b: 2, c: 3 });
   });
 });
+
+describe("removeKey", () => {
+  it("should create a new object with the values of obj and remove a key", () => {
+    expect(addKeyVal({ a: 1, b: 2 }, "b")).toEqual({ a: 1, b: undefined });
+  });
+});
